@@ -1,0 +1,14 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level %logger{30} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="net.yeputons.spbau.practice.spring2016.interview1.game.RandomBot" level="OFF"/>
+    <logger name="net.yeputons.spbau.practice.spring2016.interview1.IOPlayer" level="OFF"/>
+
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
